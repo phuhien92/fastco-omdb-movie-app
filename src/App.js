@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SearchContainer from './Containers/SearchContainer';
 
 function App() {
+  const [fcolor, setFColor] = React.useState('#d2d2d2');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App min-h-screen" style={{ backgroundColor: fcolor }}>
+      <Header />
+      <div className="container mx-auto px-4">
+        <SearchContainer />
+      </div>
+      <Footer fcolor={fcolor} />
     </div>
   );
 }
