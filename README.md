@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/4343562/128666377-06c6dafc-9a79-49b1-a918-c49132f5d4a8.png)
 ## Movie Search App
 
 This is a responsive web app that can retrieve weather of any city round the world.
