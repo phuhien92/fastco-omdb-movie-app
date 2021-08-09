@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Playlist = ({ list }) => {
+    console.log('list:', Object.keys(list).length);
     return (
         <div className="shadow stats w-full max-w-sm">
             <div className="stat">

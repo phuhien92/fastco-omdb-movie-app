@@ -9,3 +9,9 @@ export const fetch_movie_by = (data) => {
     return axios.get(`${API_URL}&${queries.join('&')}`)
 }
 
+export const fetch_playlist = (name) => {
+    return new Promise(resolve => {
+        const data = localStorage.getItem(name) ? JSON.parse(localStorage.getItem(name)) : {};
+        resolve(data);
+    })
+}

@@ -1,9 +1,18 @@
 ## Movie Search App
 
-In the project directory, you can run:
+This is a responsive web app that can retrieve weather of any city round the world.
+Try this url : https://omdb-app-hienluong.vercel.app
+
+### Tech
+
+- [create-react-app] - React boilerplate
+- [omdapi] - movie search api
+- [tailwindcss] - a ultility-first css framework
+- [daisyui] - Tailwind CSS components
+
+### Run project
 
 `yarn start` -> start the application
-The project will start at http://localhost:3000
 
 ## Summary
 

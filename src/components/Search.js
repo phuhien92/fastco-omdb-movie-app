@@ -1,5 +1,4 @@
 import React from 'react';
-import { fetch_movie_by } from '../Api';
 
 export const Search = ({ classes, children, ...restProps }) => {
     return (
@@ -40,7 +39,7 @@ Search.Input = function SearchInput({ classes, onSubmit, ...restProps }) {
                     <span className="label-text">Search</span>
                 </label>
                 <div className="relative">
-                    <input type="text" value={formData.s} onChange={handleChange} name="s" placeholder="Search" className="w-full pr-16 input input-primary input-bordered" />
+                    <input type="text" value={formData.s} onChange={handleChange} name="s" placeholder="Search" className="w-full pr-16 input input-bordered" />
                     <button type="submit" className="absolute top-0 right-0 rounded-l-none btn btn-primary">go</button>
                 </div>
             </div>

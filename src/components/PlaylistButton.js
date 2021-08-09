@@ -15,7 +15,11 @@ const PlaylistButton = ({ addToPlaylist, item }) => {
             })
     }
     return (
-        <button className={state === 'added' ? 'btn btn-success' : `btn btn-primary ${state}`} onClick={add}>{state === 'added' ? '✓ Added' : 'Add to Playlist'}</button>
+        <>
+            {state === 'initial' && <button className='btn btn-primary' onClick={add}>ADD TO PLAYLIST</button>}
+            {state === 'added' && <button className='btn btn-success'>✓ ADDED</button>}
+            {state === 'loading' && <button className='btn btn-primary loading'>ADDING</button>}
+        </>
     )
 }
 

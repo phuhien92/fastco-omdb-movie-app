@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import SearchContainer from './Containers/SearchContainer';
 
 function App() {
-  const [fcolor, setFColor] = React.useState('#d2d2d2');
+  const [fcolor,] = React.useState('#d2d2d2');
   return (
     <div className="App min-h-screen" style={{ backgroundColor: fcolor }}>
       <Header />
